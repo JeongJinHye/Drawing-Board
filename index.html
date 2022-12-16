@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing Board</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="color-options">
+      <input type="color" id="color" />
+      <div
+        class="color-option"
+        style="background-color: #eb3b5a"
+        data-color="#eb3b5a"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #fa8231"
+        data-color="#fa8231"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #f7b731"
+        data-color="#f7b731"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #20bf6b"
+        data-color="#20bf6b"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #0fb9b1"
+        data-color="#0fb9b1"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #2d98da"
+        data-color="#2d98da"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #3867d6"
+        data-color="#3867d6"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #8854d0"
+        data-color="#8854d0"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #a5b1c2"
+        data-color="#a5b1c2"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #4b6584"
+        data-color="#4b6584"
+      ></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+      <input id="line-width" type="range" min="1" max="10" />
+      <button id="mode-btn">Fill</button>
+      <button id="destroy-btn">Destroy</button>
+      <button id="eraser-btn">Eraser</button>
+      <button id="save-btn">Save</button>
+      <input type="text" placeholder="Add text here" id="text" />
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

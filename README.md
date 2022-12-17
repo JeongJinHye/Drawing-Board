@@ -53,7 +53,7 @@ function onMove(event) {
 
 다음으로는 지정 색상 팔레트와 전체 색상 팔레트를 제공해서 사용자가 직접 고르고 고른 색을 확인할 수 있게 했습니다.<br>
 지정 팔레트는 html에 color-option을 추가해서 배열로 만들어서 forEach를 사용했습니다.<br>
-고른 색상을 보여주는 것은 input태그의 color type과 html에서 설정한 dataset-color를 이용했습니다.
+고른 색상을 보여주는 것은 input 태그의 color type과 html에서 설정한 dataset-color를 이용했습니다.
 
 ```
 const colorOptions = Array.from(
@@ -78,7 +78,7 @@ colorOptions.forEach((color) => color.addEventListener("click", onColorClick));
 ```
 
 전체 채우기와 전체 삭제 모드는 innerText와 미리 만들어둔 isFilling를 사용했습니다.<br>
-캔버스 클릭시 캔버스의 크기와 같은 크기의 도형을 그려서 하얀색으로 채워주는 방식을 사용했습니다.<br>
+캔버스 클릭 시 캔버스의 크기와 같은 크기의 도형을 그려서 하얀색으로 채워주는 방식을 사용했습니다.<br>
 (채우기와 삭제 모두 같은 방식)
 
 ```
@@ -132,7 +132,7 @@ function onDoubleClick(event) {
 <h3>문제 & 해결</h3>
 
 <b>경로가 분리되지 않아 색상 변경이 안되는 문제가 발생했습니다.<br>
-서치중 beginPath를 사용해서 이전 경로와 분리해주는 방법을 찾아서 적용했습니다.</b>
+서치 중 beginPath를 사용해서 이전 경로와 분리해 주는 방법을 찾아서 적용했습니다.</b>
 
 ```
 ctx.rect(150, 150, 100, 100); // 사각형 1
